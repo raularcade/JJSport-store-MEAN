@@ -1,0 +1,9 @@
+---
+description: Estándares para tienda local de suplementación deportiva con stack MEAN
+globs: ["backend/**/*.js", "frontend/src/**/*.ts", "frontend/src/**/*.html"]
+alwaysApply: true
+---
+- Arquitectura monorepo: `/backend` (Node.js, Express, Mongoose, CommonJS) y `/frontend` (Angular moderno con Standalone Components, Signals y control flow `@if` / `@for`).
+- Todo funciona en local contra `mongodb://127.0.0.1:27017/tiendagym` y `http://localhost:4000/api`.
+- Dominio nutricional: Cada producto tiene categoría (proteinas, creatina, pre-entreno, vitaminas, hidratacion, etc), objetivo (hipertrofia, resistencia, recuperacion), etiquetas dietéticas (vegano, sin-lactosa, sin-gluten, sin-cafeina), dosis recomendada, tabla nutricional por 100 g y por toma, y un array de variantes (`sabor`, `formato`, `precio`, `stock`).
+- No instales librerías pesadas innecesarias (ni NgRx ni Bootstrap); usa CSS limpio y Angular Signals para el estado global del carrito.

@@ -1,0 +1,13 @@
+# Dependencias (se reinstalan con npm install)
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Compilados y caché de Angular
+frontend/.angular/
+frontend/dist/
+
+# Variables de entorno y logs
+.env
+backend/.env
+*.log
